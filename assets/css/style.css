@@ -7,11 +7,11 @@
 }
 
 body {
-  width: 40%;
+  width: 48%;
   min-width: 20%;
   max-width: 120%;
   margin: 0 auto;
-  padding: 15px 30px;
+  padding: 0px 30px;
   font-family: 'Secular One', sans-serif;
 }
 
@@ -20,24 +20,72 @@ body {
   display: table;
   clear: both;
 }
+li {
+  display: inline-block;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #9b9a9a;
+}
+
+a:hover {
+  color: #c04e58;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.25);
+  height: 100%;
+}
 
 /* HEADER */
 
 .header.container{
   padding-bottom: 15px;
 }
+.menu nav {
+  margin-bottom: 25px;
+}
+.logo {
+  display: inline-block;
+  width: 100px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  border-right: 1px solid lightgrey;
+}
 
-.upper-header {
-  background-color: #e579e6;
-  height: 60px;
+.menu li {
+  text-transform: uppercase;
+  margin-right: 6px;
+  font-size: 10px;
+  font-weight: 400;
 }
 
 .jumbotron{
-  background-color: #e1d67a;
-  height: 250px;
-  margin-top: 15px;
+  background-image: url('../img/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 285px;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
 }
 
+.jumbotron .text {
+  padding-top: 180px;
+  padding-left: 35px;
+}
+
+.text h3{
+  width: 55%;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.text p {
+  width: 60%;
+  font-size: 12px;
+}
 /* MAIN */
 
 main {
