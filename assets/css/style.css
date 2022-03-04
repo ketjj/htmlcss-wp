@@ -20,10 +20,12 @@ body {
   display: table;
   clear: both;
 }
+
 li {
   display: inline-block;
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: #9b9a9a;
@@ -34,18 +36,17 @@ a:hover {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.2);
   height: 100%;
 }
 
 /* HEADER */
 
-.header.container{
-  padding-bottom: 15px;
-}
 .menu nav {
   margin-bottom: 25px;
+  float: left;
 }
+
 .logo {
   display: inline-block;
   width: 100px;
@@ -62,6 +63,7 @@ a:hover {
 }
 
 .jumbotron{
+  max-width: 1000px;
   background-image: url('../img/banner.jpg');
   background-size: cover;
   background-position: center;
@@ -86,41 +88,107 @@ a:hover {
   width: 60%;
   font-size: 12px;
 }
-/* MAIN */
 
-main {
-  height: 340px;
-  background-color: #0086ff;
-  margin-bottom: 5px;
+
+/* MAIN  STARTS HERE!*/
+
+/* TOP TEXT */
+
+.top-text{
+  margin: 20px 0;
 }
-.col, .center-xx,.top-text {
-  background-color: #abcfe7;
+
+.top-text .undernote{
+  color: #9b9a9a;
+  font-size: 10px;
+}
+
+/* COLUMNS */
+
+main .col p{
+  color: #9b9a9a;
+  font-size: 10px;
+  padding-top: 10px;
+}
+
+main .col h3 {
+  font-size: 12px;
+  padding-top: 15px;
 }
 
 .col,.center-xx {
   float:left;
   height: 278px;
 }
-.top-text{
-  height: 40px;
-  margin-bottom: 2%;
-}
+
+ /* ASIDE-LEFT */
 
 .col-sx{
   width: 18%;
   margin-right: 2%;
+  overflow: hidden;
 }
+
+.left-sideimage{
+  background-image: url('../img/img-1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 40%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* CENTER */
+
+.center-xx {
+  width: 60%;
+}
+
+.center-sideimage{
+  background-image: url('../img/banner-2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 40%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.center-xx p{
+  color: #9b9a9a;
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+.center-xx h3 {
+  font-size: 12px;
+  padding-top: 15px;
+}
+
+/* ASIDE-RIGHT */
+
+.right-sideimage{
+  background-image: url('../img/img-3.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 40%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 .col-dx {
   width: 18%;
   margin-left: 2%;
-}
-.center-xx {
-  width: 60%;
 }
 
 /* footer */
 
 footer {
-  background-color: #8801fe;
+  margin-top: 15px;
   height: 30px;
+  font-size: 14px;
+  text-align: center;
+}
+.heart::after {
+  content: '\2665';
+  color: red;
 }
